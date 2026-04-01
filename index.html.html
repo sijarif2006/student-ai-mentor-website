@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student AI Mentor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1565C0;
+      --accent: #FF6F00;
+      --bg: #f5f5f5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #1565C0, #0D47A1);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 15px 0 30px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .btn-play {
+      background: white;
+      color: #1565C0;
+    }
+
+    .btn-apple {
+      background: #000;
+      color: #fff;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      opacity: 0.9;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: var(--primary);
+    }
+
+    /* FEATURES */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .icon {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    /* BILINGUAL */
+    .badges {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      padding: 10px 20px;
+      border-radius: 20px;
+      background: var(--primary);
+      color: white;
+      font-weight: 600;
+    }
+
+    /* AUDIENCE */
+    .audience .card {
+      border-top: 4px solid var(--accent);
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0D47A1;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer a {
+      color: var(--accent);
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* RESPONSIVE */
+    @media(max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Student AI Mentor</h1>
+    <p>Your Smart Study & Career Companion</p>
+    <div class="buttons">
+      <a href="#" class="btn btn-play">▶ Google Play</a>
+      <a href="#" class="btn btn-apple"> App Store</a>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section>
+    <h2>Core Features</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">💬</div>
+        <h3>Study Mentor</h3>
+        <p>Chat with an AI tutor for instant explanations, notes, and study help.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📝</div>
+        <h3>Exam Practice</h3>
+        <p>Practice questions from Bangladesh curriculum and global exams.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🎯</div>
+        <h3>Career Guide</h3>
+        <p>Discover the best career path with AI-powered quizzes and insights.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BILINGUAL -->
+  <section>
+    <h2>Bilingual Support</h2>
+    <div class="badges">
+      <div class="badge">English</div>
+      <div class="badge">বাংলা</div>
+    </div>
+  </section>
+
+  <!-- AUDIENCE -->
+  <section class="audience">
+    <h2>Who Is It For?</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>School Students</h3>
+        <p>Get help with homework, concepts, and exam preparation.</p>
+      </div>
+      <div class="card">
+        <h3>University Students</h3>
+        <p>Understand complex topics and prepare for competitive exams.</p>
+      </div>
+      <div class="card">
+        <h3>Career Seekers</h3>
+        <p>Find career direction and build skills for future success.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Student AI Mentor. All rights reserved.</p>
+    <div>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </footer>
+
+</body>
+</html>
